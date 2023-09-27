@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mooli', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #FFFFFF;
+}
+
+.logo h1 {
+    font-family: 'Pacifico', cursive;
+    color: #361500;
+}
+
+.list-item {
+    display: flex;
+    list-style-type: none;
+}
+
+.list-item hr {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+}
+
+.list-item li {
+    padding: 0 64px;
+}
+
+.list-item li a {
+    color: #361500;
+    text-decoration: none;
+}
+
+.list-item li a:hover {
+    font-weight: bold;
+}
+
+.nav-icon svg{
+    height: 24px;
+    margin-left: 16px;
+    fill: #361500;
+}
+
+.hero {
+    display: flex;
+    height: 700px;
+    background-color: #FACBEA;
+}
+
+.hero-title {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title h1 {
+    font-size: 56px;
+    color: #361500;
+}
+
+.hero-title p {
+    margin-top: 16px;
+    background-color: #B0578D;
+    padding: 8px 32px;
+    border-radius: 8px;
+    letter-spacing: 8px;
+    font-size: 18px;
+    color: white;
+    rotate: -2deg;
+}
+
+.hero-img {
+    flex-basis: 40%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.hero-img img {
+    height: 90%;
+}
+
+.hero-desc {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+}
+
+.hero-desc hr {
+    width: 30%;
+    border: 1px solid #361500;
+}
+
+.hero-desc h2 {
+    color: #361500;
+    font-size: 48px;
+}
+
+.menu {
+    height: 700px;
+    background-color: #D988B9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu h2 {
+    margin-top: 32px;
+    margin-bottom:  8px;
+    color: white;
+}
+
+.menu hr {
+    width: 200px;
+    border: 1px solid white;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 64px;
+}
+
+.list-menu {
+    width: 15%;
+    margin-block: 64px;
+}
+
+.list-menu img{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius:  150px 150px 0 0;
+}
+
+.nama-harga {
+    margin-top: -5px;
+    background-color: #B0578D;
+    color: white;
+    border-radius: 0 150px 150px 150px;
+    padding: 16px 32px;
+}
+
+.nama-harga h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: black;
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+
+.product {
+    height: 100vh;
+    background-color: #FACBEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    height: 100vh;
+    background-color: #FACBEA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about hr {
+    margin-top: 8px;
+    width: 100px;
+    border: 1px solid #361500;
+}
+
+.about-content {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content img {
+    height: 70%;
+    border-radius:  250px 250px 0 0;
+    margin-right: 128px
+}
+
+.biodata td {
+    padding: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    .list-item {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .hero-img {
+        height: 20%;
+    }
+
+    .hero-desc {
+        display: none;
+    }
+
+    .menu {
+        height: auto;
+    }
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-menu {
+        width: 80%;
+        margin-block: 16px;
+    }
+
+    .about {
+        height: auto;
+    }
+    .about h1 {
+        margin-top: 64px;
+    }
+    .about-content {
+        margin-block: 64px;
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    .about-content img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        margin-bottom: 32px;
+    }
+    
+}
