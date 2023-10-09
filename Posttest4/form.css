@@ -1,0 +1,123 @@
+.form {
+    height: 100vh;
+    display: flex;
+}
+
+.form-box {
+    flex-basis: 40%;
+    padding: 64px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title h1 {
+    margin-bottom: 8px;
+}
+
+.form-container {
+    width: 100%;
+    padding-block: 32px;
+}
+
+.form-container label {
+    width: 100%;
+}
+
+.input-container {
+    display: flex;
+    gap: 16px;
+}
+
+.input-field {
+    width: 100%;
+    margin-top: 8px;
+    padding: 16px;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    display: flex;
+}
+
+.input-field:focus {
+    outline: 2px solid var(--tertiary-color);
+}
+
+.policy {
+    font-size: 14px;
+    accent-color: var(--secondary-color);
+    display: flex;
+    gap: 16px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--secondary-color);
+    border: var(--tertiary-color);
+    border-radius: 4px;
+    color: white;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    background-color: var(--tertiary-color);
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.login-with {
+    width: 100%;
+    text-align: center;
+}
+
+.login-with-btn {
+    margin-top: 16px;
+    display: flex;
+    gap: 16px;
+}
+
+.login-with-btn button {
+    width: 100%;
+    padding: 16px 32px;
+    background-color: white;
+    border: 1px solid #CDCDCD;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.login-with-btn button p {
+    width: 100%;
+    text-align: center;
+}
+
+.login-with-btn button:hover {
+    cursor: pointer;
+    background-color: #EFEFEF;
+}
+
+.form-background {
+    flex-basis: 60%;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-background img {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.form-background h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    color: var(--text-primary-color);
+    position: absolute;
+    bottom: 16px;
+    right: 32px;
+}
